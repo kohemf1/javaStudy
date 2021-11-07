@@ -108,22 +108,17 @@ class Main {
 		//(1)과 (2)위치에 들어갈 세 자리 자연수가 주어질 때 
 		//(3), (4), (5), (6)위치에 들어갈 값을 구하는 프로그램을 작성하시오.
 		
-		int a,b,c,d,e,f;
+		int a,b;
 		Scanner sc = new Scanner(System.in);
 		
 		a = sc.nextInt();
 		b = sc.nextInt();
-		c = sc.nextInt();
-		d = sc.nextInt();
-		e = sc.nextInt();
-		f = sc.nextInt();
 		
-		System.out.println(((a*100)+(b*10)+(c)) * (d*100));
-		System.out.println(((a*100)+(b*10)+(c)) * (e*10));
-		System.out.println(((a*100)+(b*10)+(c)) * (f));
-		System.out.println(((a*100)+(b*10)+(c)) * (d*100) 
-				+ ((a*100)+(b*10)+(c)) * (e*10) 
-				+ ((a*100)+(b*10)+(c)) * (f));
+		System.out.println(a * (b%10));
+		System.out.println(a * (b%100/10));
+		System.out.println(a * (b/100));
+		System.out.println(a * b);
+	
 	}
 		
 }
