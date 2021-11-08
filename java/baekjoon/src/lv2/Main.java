@@ -69,21 +69,21 @@ public class Main {
 		//점의 좌표를 입력받아 그 점이 어느 사분면에 속하는지 알아내는 프로그램을 작성하시오. 
 		//단, x좌표와 y좌표는 모두 양수나 음수라고 가정한다.
 		
-		int a;
-		int b;
-		Scanner sc = new Scanner(System.in);
-		a = sc.nextInt();
-		b = sc.nextInt();
-		
-		if(a > 0 && b > 0) {
-			System.out.println("1");
-		}else if (a < 0 && b > 0) {
-			System.out.println("2");
-		}else if (a < 0 && b < 0) {
-			System.out.println("3");
-		} else {
-			System.out.println("4");
-		}
+//		int a;
+//		int b;
+//		Scanner sc = new Scanner(System.in);
+//		a = sc.nextInt();
+//		b = sc.nextInt();
+//		
+//		if(a > 0 && b > 0) {
+//			System.out.println("1");
+//		}else if (a < 0 && b > 0) {
+//			System.out.println("2");
+//		}else if (a < 0 && b < 0) {
+//			System.out.println("3");
+//		} else {
+//			System.out.println("4");
+//		}
 		
 		//상근이는 매일 아침 알람을 듣고 일어난다. 
 		//알람을 듣고 바로 일어나면 다행이겠지만, 
@@ -98,8 +98,31 @@ public class Main {
 		//현재 상근이가 설정한 알람 시각이 주어졌을 때, 창영이의 방법을 사용한다면, 
 		//이를 언제로 고쳐야 하는지 구하는 프로그램을 작성하시오.
 		
+		int a;
+		int b;
+		Scanner sc = new Scanner(System.in);
+		a = sc.nextInt();
+		b = sc.nextInt();
 		
-		
+		if(b < 45) {
+			if(a == 0) {
+				a = 23;
+				b = b+15;				
+			}
+			else if(a>0){
+				a = a-1;
+				b = b+15;
+			}
+		}
+		else if (b >= 45) {
+			if (a == 0) {
+				b = b-45;
+			}
+			else if (a > 0) {
+				b = b-45;
+			}
+		}
+		System.out.println(a +" "+ b);
 	}
 
 }
