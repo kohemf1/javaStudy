@@ -97,11 +97,11 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		
 		T = sc.nextInt();
-		for(int i=0; i < T; i++) {
+		for(int i=1; i < T+1; i++) {
 			int a = sc.nextInt();
 			int b = sc.nextInt();
 			
-			System.out.println(a+b);
+			System.out.println("Case #" + i +": "+ (a+b));
 			
 		}
 		
