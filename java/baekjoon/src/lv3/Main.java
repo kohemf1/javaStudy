@@ -56,19 +56,31 @@ public class Main {
 		//첫 줄에 테스트케이스의 개수 T가 주어진다. T는 최대 1,000,000이다.
 		//다음 T줄에는 각각 두 정수 A와 B가 주어진다. A와 B는 1 이상, 1,000 이하이다.
 		
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		//String s = br.readLine();
-		//StringTokenizer st = new StringTokenizer(s);		
-		//int T = Integer.parseInt(st.nextToken());
-		StringTokenizer st;
-		int T = Integer.parseInt(br.readLine());
-		for(int i=0; i<T; i++) {
-			st = new  StringTokenizer(br.readLine());
-			bw.write((Integer.parseInt(st.nextToken())
-					+Integer.parseInt(st.nextToken()))+"\n");
+//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+//		//String s = br.readLine();
+//		//StringTokenizer st = new StringTokenizer(s);		
+//		//int T = Integer.parseInt(st.nextToken());
+//		StringTokenizer st;
+//		int T = Integer.parseInt(br.readLine());
+//		for(int i=0; i<T; i++) {
+//			st = new  StringTokenizer(br.readLine());
+//			bw.write((Integer.parseInt(st.nextToken())
+//					+Integer.parseInt(st.nextToken()))+"\n");
+//		}
+//		bw.close();
+		
+		//자연수 N이 주어졌을 때, 1부터 N까지 한 줄에 하나씩 출력하는 프로그램을 작성하시오.
+		
+		int N;
+		Scanner sc = new Scanner(System.in);
+		
+		N = sc.nextInt();
+		
+		for(int i=1; i < N+1; i++) {
+			System.out.println(i);
 		}
-		bw.close();
+		
 	}
 	
 }
