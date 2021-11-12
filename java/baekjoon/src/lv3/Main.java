@@ -93,18 +93,71 @@ public class Main {
 			
 		//두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오
 		
-		int T;
+//		int T;
+//		Scanner sc = new Scanner(System.in);
+//		
+//		T = sc.nextInt();
+//		for(int i=1; i < T+1; i++) {
+//			int a = sc.nextInt();
+//			int b = sc.nextInt();
+//			
+//			System.out.println("Case #" + i +": "+ (a+b));
+//		}		
+		//첫째 줄에 테스트 케이스의 개수 T가 주어진다.
+
+		//각 테스트 케이스는 한 줄로 이루어져 있으며, 
+		//각 줄에 A와 B가 주어진다. (0 < A, B < 10
+		
+//		int T;
+//		Scanner sc = new Scanner(System.in);
+//		
+//		T = sc.nextInt();
+//		for(int i=1; i < T+1; i++) {
+//			int a = sc.nextInt();
+//			int b = sc.nextInt();
+//			
+//			System.out.println("Case #" + i +": "+ a + " + " + b + " = "+ (a+b));
+//		
+//			
+//		}
+		
+		
+		//첫째 줄에는 별 1개, 둘째 줄에는 별 2개, N번째 줄에는 별 N개를 찍는 문제
+//		
+//		int a;
+//		Scanner sc = new Scanner(System.in);
+//		a = sc.nextInt();
+//		
+//		for(int i=1; i <= a; i++ ) {
+//			
+//			for(int k = a-i; k>0; k--) {
+//				System.out.print(" ");
+//			}
+//			
+//			for(int j=0; j<i; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.print("\n");
+//		}
+		
+		//정수 N개로 이루어진 수열 A와 정수 X가 주어진다. 
+		//이때, A에서 X보다 작은 수를 모두 출력하는 프로그램을 작성하시오.
+		
+		int a;
+		int b;
 		Scanner sc = new Scanner(System.in);
+		a = sc.nextInt();
+		b = sc.nextInt();
 		
-		T = sc.nextInt();
-		for(int i=1; i < T+1; i++) {
-			int a = sc.nextInt();
-			int b = sc.nextInt();
-			
-			System.out.println("Case #" + i +": "+ (a+b));
-			
+		StringBuilder sb = new StringBuilder();
+		
+		for(int i=0; i < a; i++) {
+			int c = sc.nextInt();
+			if(c < b) {
+				sb.append(c+" ");
+			}
 		}
-		
+		System.out.println(sb);
 	}
 	
 }
