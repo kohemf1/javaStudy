@@ -118,42 +118,76 @@ public class Main {
 		// }
 		// System.out.println(sum/n);
 
-		// "OOXXOXXOOO"와 같은 OX퀴즈의 결과가 있다.
-		// O는 문제를 맞은 것이고, X는 문제를 틀린 것이다.
-		// 문제를 맞은 경우 그 문제의 점수는 그 문제까지 연속된 O의 개수가 된다.
-		// 예를 들어, 10번 문제의 점수는 3이 된다.
-		// "OOXXOXXOOO"의 점수는 1+2+0+0+1+0+0+1+2+3 = 10점이다.
-		// OX퀴즈의 결과가 주어졌을 때, 점수를 구하는 프로그램을 작성하시오.
-
+//		// "OOXXOXXOOO"와 같은 OX퀴즈의 결과가 있다.
+//		// O는 문제를 맞은 것이고, X는 문제를 틀린 것이다.
+//		// 문제를 맞은 경우 그 문제의 점수는 그 문제까지 연속된 O의 개수가 된다.
+//		// 예를 들어, 10번 문제의 점수는 3이 된다.
+//		// "OOXXOXXOOO"의 점수는 1+2+0+0+1+0+0+1+2+3 = 10점이다.
+//		// OX퀴즈의 결과가 주어졌을 때, 점수를 구하는 프로그램을 작성하시오.
+//
+//		Scanner sc = new Scanner(System.in);
+//
+//		String arr[] = new String[sc.nextInt()];
+//	
+//		
+//		for (int i = 0; i < arr.length; i++) {
+//			arr[i] = sc.next();
+//		}
+//
+//		sc.close();
+//		
+//		for (int i = 0; i < arr.length; i++) {
+//			
+//			int sum = 0;
+//			int cnt = 0;
+//			
+//			for (int j = 0; j < arr[i].length(); j++) {
+//				
+//				
+//				if (arr[i].charAt(j) == 'O') {
+//					cnt++;
+//				} else {
+//					cnt = 0;
+//				}
+//				sum += cnt;
+//			}
+//			System.out.println(sum);
+//
+//		}
+		//4344번
 		Scanner sc = new Scanner(System.in);
-
-		String arr[] = new String[sc.nextInt()];
-	
+		int[] arr;
+		int num = sc.nextInt();
 		
-		for (int i = 0; i < arr.length; i++) {
-			arr[i] = sc.next();
+		for(int i = 0; i < num; i++) {
+			
+			int std = sc.nextInt(); // 학생수
+			arr = new int[std];
+			
+			double sum = 0; //성적 누적 합
+			
+			for(int j = 0; j < std; j++) {
+				int p = sc.nextInt(); //점수
+				arr[j] = p;
+				sum += p; //점수 합
+			}
+			
+			double avr = (sum/std);
+			double count = 0; // 평균넘는수
+			
+			for(int k = 0; k <std; k++) {
+				if(arr[k] > avr) {
+					count++;
+				}
+			}
+			
+			System.out.printf("%.3f%%\n",(count/std)*100);
+			
 		}
-
+		
 		sc.close();
 		
-		for (int i = 0; i < arr.length; i++) {
-			
-			int sum = 0;
-			int cnt = 0;
-			
-			for (int j = 0; j < arr[i].length(); j++) {
-				
-				
-				if (arr[i].charAt(j) == 'O') {
-					cnt++;
-				} else {
-					cnt = 0;
-				}
-				sum += cnt;
-			}
-			System.out.println(sum);
-
-		}
+		
 	}
 
 }
