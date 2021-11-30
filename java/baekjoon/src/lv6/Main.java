@@ -10,18 +10,16 @@ public class Main {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int N = sc.nextInt();
+		int n = sc.nextInt();
+		int[] arr = new int[n];
+		int sum = 0; 
 		
-		int sum = 0;
-		
-		for(int i = 0; i < N; i++) {
+		for(int i = 0; i < arr.length+1; i++) {
 			
-			sum += sc.nextInt();
+			sum += i;
 			
 		}
-		
 		System.out.println(sum);
-
 	}
 
 }
