@@ -40,32 +40,42 @@ public class Main {
 		//만약, 어떤 알파벳이 단어에 포함되어 있지 않다면 -1을 출력한다. 
 		//단어의 첫 번째 글자는 0번째 위치이고, 두 번째 글자는 1번째 위치이다.
 		
-		Scanner sc = new Scanner(System.in);
-		
-		int[] arr = new int[26]; // 알파벳 26개
-		for(int i = 0; i < arr.length; i++) {
-			arr[i] = -1; // -1을 기본으로 둠
-		}
-		
-		String a = sc.nextLine();
-		for(int i = 0; i < a.length(); i++) {
-			
-			char b = a.charAt(i);
-					
-			if(arr[b - 'a'] == -1) {// 아스키 코드'a' or 97를빼준다
-				// 중복된 문자가 있을때 맨 처음걸로 출력하기 위해 if를 사용
-				// b가 a일때 arr[0] 은 알파벳 a 이고  기본값이 -1이기 때문에
-				// if문에 충족해지고 밑에를 활용하여 a자리에 i값이 들어가게된다.
-				arr[b - 'a'] = i;
-			}
-		}
-		
-		for(int val : arr) { // 배열출력
-			System.out.print(val + " ");
-		}
+//		Scanner sc = new Scanner(System.in);
+//		
+//		int[] arr = new int[26]; // 알파벳 26개
+//		for(int i = 0; i < arr.length; i++) {
+//			arr[i] = -1; // -1을 기본으로 둠
+//		}
+//		
+//		String a = sc.nextLine();
+//		for(int i = 0; i < a.length(); i++) {
+//			
+//			char b = a.charAt(i);
+//					
+//			if(arr[b - 'a'] == -1) {// 아스키 코드'a' or 97를빼준다
+//				// 중복된 문자가 있을때 맨 처음걸로 출력하기 위해 if를 사용
+//				// b가 a일때 arr[0] 은 알파벳 a 이고  기본값이 -1이기 때문에
+//				// if문에 충족해지고 밑에를 활용하여 a자리에 i값이 들어가게된다.
+//				arr[b - 'a'] = i;
+//			}
+//		}
+//		
+//		for(int val : arr) { // 배열출력
+//			System.out.print(val + " ");
+//		}
 		
 		
 		// indexOf를 사용하면 더쉽게 풀수있음 풀어보기
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String a = sc.next();
+		for(char i = 'a'; i <='z'; i++) {
+			System.out.print(a.indexOf(i)+" ");
+			// indexof 함수는 문자열에서 특정 문자열을 찾고, 검색된 문자열이
+			// 첫번째로 나타나는 위치 index를 리턴
+			// 찾는 문자열이 없으면 -1 리턴 
+		}
 		
 	}
 
