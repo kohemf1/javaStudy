@@ -67,15 +67,27 @@ public class Main {
 		
 		// indexOf를 사용하면 더쉽게 풀수있음 풀어보기
 		
-		Scanner sc = new Scanner(System.in);
+//		Scanner sc = new Scanner(System.in);
+//		
+//		String a = sc.next();
+//		for(char i = 'a'; i <='z'; i++) {
+//			System.out.print(a.indexOf(i)+" ");
+//			// indexof 함수는 문자열에서 특정 문자열을 찾고, 검색된 문자열이
+//			// 첫번째로 나타나는 위치 index를 리턴
+//			// 찾는 문자열이 없으면 -1 리턴 
+//		}
+
+		//문자열 S를 입력받은 후에, 각 문자를 R번 반복해 새 문자열 P를 만든 후
+		//출력하는 프로그램을 작성하시오. 즉, 첫 번째 문자를 R번 반복하고, 
+		//두 번째 문자를 R번 반복하는 식으로 P를 만들면 된다. 
+		//S에는 QR Code "alphanumeric" 문자만 들어있다.
+
+		//QR Code "alphanumeric" 문자는
+		//0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ\$%*+-./: 이다
 		
-		String a = sc.next();
-		for(char i = 'a'; i <='z'; i++) {
-			System.out.print(a.indexOf(i)+" ");
-			// indexof 함수는 문자열에서 특정 문자열을 찾고, 검색된 문자열이
-			// 첫번째로 나타나는 위치 index를 리턴
-			// 찾는 문자열이 없으면 -1 리턴 
-		}
+		
+		
+		
 		
 	}
 
