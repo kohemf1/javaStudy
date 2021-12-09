@@ -85,7 +85,7 @@ public class Main {
 		//QR Code "alphanumeric" 문자는
 		//0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ\$%*+-./: 이다
 		
-		
+		Scanner sc = new Scanner(System.in);
 		
 		
 		
