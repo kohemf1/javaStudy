@@ -87,6 +87,13 @@ public class Main {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		int a ;
+		String b;
+		a = sc.nextInt();
+		
+		for(int i = 0; i < a; i++) {
+			
+		}
 		
 		
 	}
