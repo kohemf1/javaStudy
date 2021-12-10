@@ -87,11 +87,13 @@ public class Main {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int a ;
+		int a = sc.nextInt() ;
 		String b;
-		a = sc.nextInt();
 		
 		for(int i = 0; i < a; i++) {
+			int num = sc.nextInt();
+			b = sc.next();
+			char c = b.charAt(0);
 			
 		}
 		
