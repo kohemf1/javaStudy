@@ -93,8 +93,14 @@ public class Main {
 		for(int i = 0; i < a; i++) {
 			int num = sc.nextInt();
 			b = sc.next();
-			char c = b.charAt(0);
-			
+			for(int j = 0; j < b.length(); j++) {
+				char c = b.charAt(j);
+				for(int k = 0; k < num; k++) {
+					System.out.print(c);
+				}
+				
+			}
+			System.out.println();
 		}
 		
 		
